@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+
+
+ <figure id="videoContainer">
+   <video id="video" controls preload="metadata" poster="images/logopaca.png" controls>
+   
+   	  <track kind="captions" label="Français" srclang="fr" src="captions/paca.vtt" default />
+	 <!-- <track kind="captions" label="English" srclang="en" src="captions/paca.vtt" /> -->
+
+
+      <source src="videos/paca.mp4" type="video/mp4">
+      <source src="videos/paca.avi" type="video/avi">
+      <source src="videos/paca.ogg" type="video/ogg">
+      <object type="application/x-shockwave-flash" data="flash-player.swf?videoUrl=videos/paca.mp4" width="1024" height="576">
+         <param name="movie" value="flash-player.swf?videoUrl=videos/paca.mp4" />
+         <param name="allowfullscreen" value="true" />
+         <param name="wmode" value="transparent" />
+         <param name="flashvars" value="controlbar=over&amp;image=images/logopaca.png&amp;file=flash-player.swf?videoUrl=videos/paca.mp4" />
+         <img alt="Tears of Steel poster image" src="images/logopaca.png" width="1024" height="428" title="No video playback possible, please download the video from the link below" />
+      </object>
+      
+   </video>
+   
+   <figcaption>Le lien --> <a href="videos/paca.mp4">Download MP4</a></figcaption>
+</figure>
+
+
+
+
+
+
+</body>
+</html>
